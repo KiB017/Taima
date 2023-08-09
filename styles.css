@@ -11,7 +11,7 @@ header
     background: #2AAF74;
     display: flex;
     min-height: 70px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 5px;
 }
@@ -37,10 +37,5 @@ header
 {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.title
-{
     align-items: center;
 }
