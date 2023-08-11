@@ -20,6 +20,7 @@ header
 {
     font-weight: bolder;
     font-size: 20px;
+    text-align: center;
     color: black;
     height: auto;
     width: auto;
@@ -29,8 +30,22 @@ header
     border-radius: 10px;
     border-color: #4ED99C;
     margin: 10px;
-    padding: 0px 265px 0px 265px;
+    padding: 0px 255px 0px 255px;
     background: #F7BE7F;
+}
+
+.timer-container
+{
+    text-align: center;
+}
+
+.timer-container
+{
+    background: #D1EBFE;
+    border-radius: 10px;
+    color: black;
+    width: 100px;
+    margin: 0px auto;
 }
 
 .container
