@@ -16,6 +16,14 @@ header
     padding: 5px;
 }
 
+.container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
 .box 
 {
     font-weight: bolder;
@@ -24,19 +32,19 @@ header
     color: black;
     height: auto;
     width: auto;
-    position: relative;
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
     border-color: #4ED99C;
-    margin: 10px;
-    padding: 0px 255px 0px 255px;
+    margin: 20px;
+    padding: 10px 155px 10px 155px;
     background: #F7BE7F;
 }
 
+
 .timer-container
 {
-    text-align: center;
+    padding: auto;
 }
 
 .timer-container
@@ -48,9 +56,14 @@ header
     margin: 0px auto;
 }
 
-.container
+@media (min-width: 760px)
 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    .header
+    {
+        width: auto;
+    }
+    .container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
