@@ -44,16 +44,12 @@ header
 
 .timer-container
 {
-    padding: auto;
-}
-
-.timer-container
-{
     background: #D1EBFE;
     border-radius: 10px;
     color: black;
     width: 100px;
     margin: 0px auto;
+    padding: 15px 20px;
 }
 
 @media (min-width: 760px)
