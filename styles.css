@@ -47,9 +47,15 @@ header
     background: #D1EBFE;
     border-radius: 10px;
     color: black;
-    width: 100px;
-    margin: 0px auto;
+    width: 150px;
+    margin: 10px;
     padding: 15px 20px;
+}
+
+.timer-part
+{
+    font-size: 36px;
+    font-weight: bold;
 }
 
 @media (min-width: 760px)
