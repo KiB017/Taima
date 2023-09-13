@@ -66,6 +66,13 @@ header
     border: none;
     color: #2AAF74;
     background-color: #D1EBFE;
+    transition: 0.3s;
+}
+
+.timer_btn:hover
+{
+    color: #D1EBFE;
+    background-color: #2AAF74;
 }
 
 @media (min-width: 760px)
