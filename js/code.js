@@ -1,4 +1,4 @@
-import Timer from "./Timer.js";
+import Timer from "./timer.js";
 
 new Timer
 (
