@@ -93,12 +93,12 @@ export default class Timer
         return `
             <h3 class="timer-title">Pomodoro timer</h3>
             <div class="timer-container">
-                <span class="timer-part timer-part-minutes">00</span>
+                <span class="timer-part timer-part-minutes">25</span>
                 <span class="timer-part">:</span>
                 <span class="timer-part timer-part-seconds">00</span>
             </div>           
             <button class="timer_btn timer_btn_contorl start-button ">
-                <span class="material-symbols-outlined">pause_circle</span>
+                <span class="material-symbols-outlined">play_circle</span>
             </button>
             <button class="timer_btn timer_btn_contorl reset-button ">
                 <span class="material-symbols-outlined">device_reset</span>
