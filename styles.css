@@ -91,6 +91,24 @@ header
 
     .box
     {
+        padding: 10px auto;
+    }
+    
+    .container
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px)
+{
+    header
+    {
+        width: auto;
+    }
+
+    .box
+    {
         padding: 10px;
     }
     
