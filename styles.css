@@ -75,23 +75,11 @@ header
     background-color: #2AAF74;
 }
 
-@media (min-width: 283px)
+@media (max-width: 1070px)
 {
-    header
-    {
-        width: auto;
-    }
     .container
     {
         flex-direction: column;
     }
 }
 
-@media (max-width: 1070px)
-{
-    
-    .container
-    {
-        flex-direction: column;
-    }
-}
