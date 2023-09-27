@@ -12,9 +12,8 @@ export default class Timer
             reset: root.querySelector(".reset-button")
         };
 
-        this.interval = null;
-        this.remainSeconds = 1500;
-
+        this.interval = null;//
+        this.remainSeconds = 1500;//25 minutes but converted in seconds.
 
         this.el.control.addEventListener("click", () => {
             if(this.interval === null)
@@ -26,6 +25,7 @@ export default class Timer
                 this.stop();
             }
         })
+
         this.el.reset.addEventListener("click", () => {
             const inputMinutes = prompt("Enter number of minutes: ");
 
@@ -38,6 +38,7 @@ export default class Timer
         })
     }
 
+    //this function is for the clock make it work
     updateInterfaceTime()
     {
         const minutes = Math.floor(this.remainSeconds / 60);
@@ -47,6 +48,7 @@ export default class Timer
         this.el.seconds.textContent = seconds.toString().padStart(2, "0");
     }
 
+    //this function is for the buttons to work
     updateInterfaceControls()
     {
         if(this.interval === null)
@@ -63,6 +65,7 @@ export default class Timer
         }
     }
 
+    //
     start()
     {
         if (this.remainSeconds === 0) return;
