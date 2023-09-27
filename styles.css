@@ -10,7 +10,7 @@ header
 {
     background: #2AAF74;
     display: flex;
-    min-height: 70px;
+    min-height: auto;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -80,15 +80,20 @@ header
     {
         width: auto;
     }
-    
 }
 
-@media (max-width: 283px)
+@media (max-width: 1069px)
 {
     header
     {
         width: auto;
     }
+
+    .box
+    {
+        padding: 10px;
+    }
+    
     .container
     {
         flex-direction: column;
