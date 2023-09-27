@@ -4,7 +4,6 @@ body
     margin: 0px;
     background: #D1EBFE;
     align-items: center;
-    min-height: 100vh;
 }
 
 header
@@ -75,7 +74,16 @@ header
     background-color: #2AAF74;
 }
 
-@media (min-width: 283px)
+@media (min-width: 1070px)
+{
+    header
+    {
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 283px)
 {
     header
     {
@@ -87,11 +95,3 @@ header
     }
 }
 
-@media (max-width: 1070px)
-{
-    
-    .container
-    {
-        flex-direction: column;
-    }
-}
