@@ -4,14 +4,13 @@ body
     margin: 0px;
     background: #D1EBFE;
     align-items: center;
-    min-height: 100vh;
 }
 
 header
 {
     background: #2AAF74;
     display: flex;
-    min-height: 70px;
+    min-height: auto;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -75,8 +74,26 @@ header
     background-color: #2AAF74;
 }
 
+@media (min-width: 1069px)
+{
+    header
+    {
+        width: auto;
+    }
+}
+
 @media (max-width: 1070px)
 {
+    header
+    {
+        width: auto;
+    }
+
+    .box
+    {
+        padding: 10px;
+    }
+    
     .container
     {
         flex-direction: column;
