@@ -66,6 +66,7 @@ header
     color: #2AAF74;
     background: #D1EBFE;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .timer_btn:hover
@@ -99,6 +100,7 @@ header
     border-radius: 30px;
     background: #2AAF74;
     color: #D1EBFE;
+    cursor: pointer;
 }
 
 @media (min-width: 1069px)
