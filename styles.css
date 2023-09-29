@@ -64,7 +64,7 @@ header
     border-radius: 25%;
     border: none;
     color: #2AAF74;
-    background-color: #D1EBFE;
+    background: #D1EBFE;
     transition: 0.3s;
 }
 
@@ -72,6 +72,23 @@ header
 {
     color: #D1EBFE;
     background-color: #2AAF74;
+}
+
+.row
+{
+    display: flex;
+    background: #D1EBFE;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.input-box
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
 }
 
 @media (min-width: 1069px)
