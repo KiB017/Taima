@@ -91,6 +91,16 @@ header
     padding: 10px;
 }
 
+.add-btn
+{
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: #2AAF74;
+    color: #D1EBFE;
+}
+
 @media (min-width: 1069px)
 {
     header
