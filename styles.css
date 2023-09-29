@@ -100,7 +100,31 @@ header
     border-radius: 30px;
     background: #2AAF74;
     color: #D1EBFE;
+    transition: 0.3s;
     cursor: pointer;
+}
+
+.add-btn:hover
+{
+    background: #4ED99C;
+}
+
+ul li
+{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 9px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
 }
 
 @media (min-width: 1069px)
