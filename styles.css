@@ -117,14 +117,18 @@ header
 
 ul li
 {
+    background: #D1EBFE;
+    height: 24px;
+    width: 200px;
     text-align: left;
     list-style: none;
     font-size: 18px;
     margin: 12px;
-    padding: 6px;
+    padding: 12px 6px 12px 12px;
     user-select: none;
     cursor: pointer;
-    position: center;
+    position: relative;
+    border-radius: 30px;
 }
 
 ul li::before
@@ -136,11 +140,9 @@ ul li::before
     border-radius: 50%;
 }
 
-.uncheck-box
+.check-btn
 {
-    color: #2AAF74;
-    background-size: cover;
-    position: center;
+    color:#2AAF74;
 }
 
 @media (min-width: 1069px)
