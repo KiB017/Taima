@@ -108,4 +108,14 @@ export default class Timer
             </button>
         `;
     }
+
+    static getUncheckBox()
+    {
+        return '<span class="material-symbols-outlined uncheck-box">check_box_outline_blank</span>';
+    }
+
+    static getCheckedBox()
+    {
+        return '<span class="material-symbols-outlined">check_box</span>';
+    }
 }

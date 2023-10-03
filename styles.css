@@ -109,13 +109,22 @@ header
     background: #4ED99C;
 }
 
+.list-container
+{
+    margin: 0px;
+    padding: 0px;
+}
+
 ul li
 {
+    text-align: left;
     list-style: none;
     font-size: 18px;
-    padding: 12px 9px 12px 50px;
+    margin: 12px;
+    padding: 6px;
     user-select: none;
     cursor: pointer;
+    position: center;
 }
 
 ul li::before
@@ -125,6 +134,13 @@ ul li::before
     height: 27px;
     width: 27px;
     border-radius: 50%;
+}
+
+.uncheck-box
+{
+    color: #2AAF74;
+    background-size: cover;
+    position: center;
 }
 
 @media (min-width: 1069px)
