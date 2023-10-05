@@ -118,31 +118,34 @@ header
 ul li
 {
     background: #D1EBFE;
-    height: 24px;
+    height: 18px;
     width: 200px;
     text-align: left;
     list-style: none;
     font-size: 18px;
     margin: 12px;
-    padding: 12px 6px 12px 12px;
+    padding: 12px 6px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
-    border-radius: 30px;
+    border-radius: 30px;    
+}
+
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
 }
 
 ul li::before
 {
     content: '';
-    position: absolute;
+    position: relative;
     height: 27px;
     width: 27px;
     border-radius: 50%;
-}
-
-.check-btn
-{
-    color:#2AAF74;
+    background-image: url(images\check_box_FILL0_wght400_GRAD0_opsz24.svg);
+    
 }
 
 @media (min-width: 1069px)

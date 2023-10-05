@@ -20,7 +20,7 @@ function addTask()
     else
     {
         let li = document.createElement("li");
-        li.innerHTML = '<span class="material-symbols-outlined check-btn" fill="#2AAF74">check_box_outline_blank</span> ' + inputBox.value;
+        li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
     }
 }
