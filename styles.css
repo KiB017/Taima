@@ -124,7 +124,7 @@ ul li
     list-style: none;
     font-size: 18px;
     margin: 12px;
-    padding: 12px 6px 12px 50px;
+    padding: 12px 6px 12px 12px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -141,11 +141,6 @@ ul li::before
 {
     content: '';
     position: relative;
-    height: 27px;
-    width: 27px;
-    border-radius: 50%;
-    background-image: url(images\check_box_FILL0_wght400_GRAD0_opsz24.svg);
-    
 }
 
 @media (min-width: 1069px)
