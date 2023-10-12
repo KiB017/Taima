@@ -41,19 +41,19 @@ listContainer.addEventListener("click", function(e)
 {
     let checkedBox = document.createElement("span");
     checkedBox.innerHTML = '<span class="material-symbols-outlined inactive">check_box</span>';
-    if(e.target.classList.contains("delete-btn"))
+    if(e.target.classList.contains("taskText") || e.target.classList.contains("emptybox"))
+    {
+        uncheckedBox.classList.add("inactive");
+        checkedBox.classList.toggle("inactive");
+        li.appendChild(checkedBox);
+        taskText.classList.toggle("checked");
+        saveData();
+    }
+    else if(e.target.classList.contains("delete-btn"))
     {
         li.parentElement.remove();
         console.log("pup");
-        //saveData();
-    }
-    else if(e.target.classList.contains("taskText") || e.target.classList.contains("emptyBox"))
-    {
-        uncheckedBox.classList.add("inactive");
-        checkedBox.classList.toggle("inactive")
-        taskText.classList.toggle("checked");
-        console.log("pup");
-        //saveData();
+        saveData();
     }
 }, false)
 
@@ -65,4 +65,4 @@ function showTasks()
 {
     listContainer.innerHTML = localStorage.getItem("data");
 }
-//showTasks();
+showTasks();
