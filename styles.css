@@ -15,6 +15,10 @@ header
     align-items: center;
     padding: 5px;
 }
+.inactive
+{
+    display: none;
+}
 
 .container
 {
@@ -121,19 +125,56 @@ ul li
     text-align: left;
     list-style: none;
     font-size: 18px;
-    padding: 12px 6px 12px 12px;
+    padding: 12px ;
+    margin: 12px;
     user-select: none;
     cursor: pointer;
     border-radius: 30px;   
     position: relative; 
 }
 
+.darkGreen
+{
+    color: #2AAF74;
+}
+
+.darkGreen:hover
+{
+    color: #D1EBFE;
+    background-color: #2AAF74;
+}
+
 ul li::before
 {
     content: '';
+    position: absolute;
 }
 
-ul li.checked
+.delete-btn
+{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.emptyBox
+{
+    position: relative;
+    top: 5px;
+    border-radius: 25%;
+}
+
+.taskText
+{
+    position: absolute;
+    top: 20px;
+}
+
+.checked
 {
     color: #555;
     text-decoration: line-through;
