@@ -118,29 +118,25 @@ header
 ul li
 {
     background: #D1EBFE;
-    height: 18px;
-    width: 200px;
     text-align: left;
     list-style: none;
     font-size: 18px;
-    margin: 12px;
     padding: 12px 6px 12px 12px;
     user-select: none;
     cursor: pointer;
-    position: relative;
-    border-radius: 30px;    
+    border-radius: 30px;   
+    position: relative; 
+}
+
+ul li::before
+{
+    content: '';
 }
 
 ul li.checked
 {
     color: #555;
     text-decoration: line-through;
-}
-
-ul li::before
-{
-    content: '';
-    position: relative;
 }
 
 @media (min-width: 1069px)
