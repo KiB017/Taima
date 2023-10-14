@@ -166,13 +166,6 @@ ul li::before
     border-radius: 25%;
 }
 
-.checked-box
-{
-    position: relative;
-    top: 4px;
-    border-radius: 25%;
-}
-
 .taskText
 {
     position: absolute;

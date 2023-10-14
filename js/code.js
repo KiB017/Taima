@@ -20,12 +20,13 @@ function addTask()
     else
     {
         let li = document.createElement("li");
-        let taskText = document.createElement("span");
+        let taskText = document.createElement("div");
         taskText.classList.add("taskText");
         taskText.innerText = inputBox.value;
         let uncheckedBox = document.createElement("span");
+
         uncheckedBox.innerHTML = '<span class="material-symbols-outlined darkGreen unchecked-box">check_box_outline_blank</span>';
-        let span = document.createElement("span");
+        let span = document.createElement("button");
         span.innerHTML = '<span class="material-symbols-outlined darkGreen delete-btn">delete_forever</span>';
         li.appendChild(uncheckedBox);
         li.appendChild(taskText);
@@ -46,10 +47,10 @@ listContainer.addEventListener("click", function(e){
         console.log("checked");
         saveData();
     }
-    else if(e.target.classList.contains("delete-btn"))
+    else if(e.target.tagName === "span")
     {
         let li = e.target.parentElement;
-        li.remove();
+        listContainer.li.remove();
         console.log("pup");
         saveData();
     }
