@@ -17,10 +17,6 @@ header
     align-items: center;
     padding: 5px;
 }
-.inactive
-{
-    display: none;
-}
 
 .container
 {
@@ -163,7 +159,14 @@ ul li::before
     border-radius: 30%;
 }
 
-.emptyBox
+.unchecked-box
+{
+    position: relative;
+    top: 4px;
+    border-radius: 25%;
+}
+
+.checked-box
 {
     position: relative;
     top: 4px;

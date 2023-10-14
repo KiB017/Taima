@@ -36,13 +36,12 @@ function addTask()
 }
 
 listContainer.addEventListener("click", function(e){
-    
     if(e.target.classList.contains("taskText") || e.target.classList.contains("unchecked-box"))
     {
         let checkedBox = document.createElement("span");
-        checkedBox.innerHTML = '<span class="material-symbols-outlined inactive">check_box</span>';
+        checkedBox.innerHTML = '<span class="material-symbols-outlined checked-box">check_box</span>';
         let uncheckedBox = document.querySelector('unchecked-box');
-        uncheckedBox.replaceWith(checkedBox);
+        e.target.classList.contains("unchecked-box").replaceWith(checkedBox);
         e.target.classList.toggle("checked");
         console.log("checked");
         saveData();
