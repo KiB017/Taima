@@ -6,6 +6,8 @@ body
     align-items: center;
 }
 
+/*10151963*/
+
 header
 {
     background: #2AAF74;
@@ -158,20 +160,20 @@ ul li::before
     width: 25px;
     height: 25px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .emptyBox
 {
     position: relative;
-    top: 5px;
+    top: 4px;
     border-radius: 25%;
 }
 
 .taskText
 {
     position: absolute;
-    top: 20px;
+    top: 18px;
 }
 
 .checked

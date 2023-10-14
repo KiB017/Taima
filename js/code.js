@@ -1,5 +1,5 @@
 import Timer from "./timer.js";
-
+//10151963
 new Timer
 (
     document.querySelector(".timer")
@@ -18,15 +18,13 @@ function addTask()
         alert("You must write something");
     }
     else
-    {   
-        
-        
+    {
         let li = document.createElement("li");
         let taskText = document.createElement("span");
         taskText.classList.add("taskText");
         taskText.innerText = inputBox.value;
         let uncheckedBox = document.createElement("span");
-        uncheckedBox.innerHTML = '<span class="material-symbols-outlined darkGreen emptyBox">check_box_outline_blank</span>';
+        uncheckedBox.innerHTML = '<span class="material-symbols-outlined darkGreen unchecked-box">check_box_outline_blank</span>';
         let span = document.createElement("span");
         span.innerHTML = '<span class="material-symbols-outlined darkGreen delete-btn">delete_forever</span>';
         li.appendChild(uncheckedBox);
@@ -37,21 +35,22 @@ function addTask()
     inputBox.value = "";
 }
 
-listContainer.addEventListener("click", function(e)
-{
-    let checkedBox = document.createElement("span");
-    checkedBox.innerHTML = '<span class="material-symbols-outlined inactive">check_box</span>';
-    if(e.target.classList.contains("taskText") || e.target.classList.contains("emptybox"))
+listContainer.addEventListener("click", function(e){
+    
+    if(e.target.classList.contains("taskText") || e.target.classList.contains("unchecked-box"))
     {
-        uncheckedBox.classList.add("inactive");
-        checkedBox.classList.toggle("inactive");
-        li.appendChild(checkedBox);
-        taskText.classList.toggle("checked");
+        let checkedBox = document.createElement("span");
+        checkedBox.innerHTML = '<span class="material-symbols-outlined inactive">check_box</span>';
+        let uncheckedBox = document.querySelector('unchecked-box');
+        uncheckedBox.replaceWith(checkedBox);
+        e.target.classList.toggle("checked");
+        console.log("checked");
         saveData();
     }
     else if(e.target.classList.contains("delete-btn"))
     {
-        li.parentElement.remove();
+        let li = e.target.parentElement;
+        li.remove();
         console.log("pup");
         saveData();
     }
