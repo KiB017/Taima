@@ -21,13 +21,26 @@
             <h3>To-Do List</h3>
             <div class="row">
                 <input type="text" class="input-box" placeholder="Add your task here :D">
-                <button class="add-btn">Add</button>
+                <button class="add-btn">
+                    <span class="material-symbols-outlined">add</span>
+                </button>
             </div>
-            <ul class="list-container"> 
-                
-            </ul>
+
+            <div class="select">
+                <select name="tasks" id="">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incompleted">Incompleted</option>
+                </select>
+            </div>
+
+            <div class="task-list_container">
+                <ul class="task-ist"></ul>
+            </div>
+            
         </div>
     </div>
+
     
     <script src="js/code.js" type="module"></script>
 </body>
