@@ -157,7 +157,6 @@ header
 
 .delete_btn
 {
-    color: #2AAF74;
     position: absolute;
     right: 10px;
     top: 15px;
@@ -169,7 +168,6 @@ header
 
 .checkbox_btn
 {
-    color: #2AAF74;
     position: relative;
     top: 4px;
     border-radius: 25%;
