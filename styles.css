@@ -173,23 +173,66 @@ header
     border-radius: 25%;
 }
 
-.taskText
+.delete_btn:hover,
+.checkbox_btn:hover
 {
-    position: absolute;
-    top: 18px;
+    color: #D1EBFE;
+    background-color: #2AAF74;
 }
 
 .checked
 {
     color: #555;
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
-.delete_btn:hover,
-.checkbox_btn:hover
+.slide
 {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select
+{
+    margin: auto;
+    position: relative;
+    width: 150px;
+}
+
+select
+{
+    color: #2AAF74;
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.select::after {
+    height: 26px;
+    content: "\25BC";
+    position: absolute;
+    background: #D1EBFE;
+    top: 0px;
+    right: 5px;
+    padding: 0px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: #2AAF74;
     color: #D1EBFE;
-    background-color: #2AAF74;
 }
 
 @media (min-width: 1069px)
