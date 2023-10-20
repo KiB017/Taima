@@ -6,6 +6,13 @@ new Timer
 );
 
 const inputBox = document.querySelector('.input-box');
-const listContainer = document.querySelector('.list-container');
+const taskList = document.querySelector('.task-ist');
 const addBtn = document.querySelector('.add-btn');
+const selectFilter = document.querySelector('.select-filter');
+
+document.addEventListener("DOMContentLoaded", getLocalTasks);
+addBtn.addEventListener("click", addTask);
+taskList.addEventListener("click", deleteTask);
+filterOption.addEventListener("click", filterTask);
+
 
