@@ -211,11 +211,13 @@ select {
 select
 {
     color: #2AAF74;
+    background: #D1EBFE;
     width: 100px;
-    height: 25px;
+    height: 26px;
     cursor: pointer;
-    padding: 0px;
-    border-radius: 5px;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .select::after {
@@ -228,6 +230,8 @@ select
     padding: 0px;
     pointer-events: none;
     transition: all 0.3s ease;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .select:hover::after {
