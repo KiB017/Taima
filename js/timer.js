@@ -10,7 +10,8 @@ export default class Timer
             minutes: root.querySelector(".timer-part-minutes"),
             seconds: root.querySelector(".timer-part-seconds"),
             control: root.querySelector(".timer_btn_contorl"),
-            reset: root.querySelector(".reset-button")
+            reset: root.querySelector(".reset-button"),
+            audio: root.querySelector
         };
 
         this.interval = null;//
@@ -92,6 +93,10 @@ export default class Timer
         this.updateInterfaceControls();
     }
 
+    playAlarm() {
+        audio.play();
+    }
+
     static getHTML()
     {
         return `
@@ -107,6 +112,10 @@ export default class Timer
             <button class="timer_btn timer_btn_contorl reset-button ">
                 <span class="material-symbols-outlined">device_reset</span>
             </button>
+
+            <audio class="alarms">
+                <source src="Audio\Alarm-Clock+Sound+Effect+(Animated)+[7eaym36MR1A].opus" type="audio/opus">
+            </audio>
         `;
     }
 }   
